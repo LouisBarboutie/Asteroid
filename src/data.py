@@ -133,7 +133,7 @@ def load(file_name: str) -> dict[str, OrbitalElements]:
     return data
 
 
-def extract(time: Time, data: [str, OrbitalElements]) -> OrbitalElements:
+def extract(time: Time, data: Dict[str, OrbitalElements]) -> OrbitalElements:
     FORMAT = "ymdhms"
     time.format = FORMAT  # ensure all formats are the same
 
